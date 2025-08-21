@@ -83,6 +83,7 @@ version = "CMakeLists.txt"
 build-type = "Release"
 
 [tool.scikit-build.cmake.define]
+CMAKE_INSTALL_PREFIX = "lightgbm_blinder"
 __BUILD_FOR_PYTHON = "ON"
 
 # end:build-system
@@ -195,7 +196,7 @@ raises-extend-require-match-for = ["*Exception", "*Error"]
     # flake8-print
     "T"
 ]
-"python-package/lightgbm/basic.py" = [
+"python-package/lightgbm_blinder/basic.py" = [
     # (pylint) Using the global statement is discouraged
     "PLW0603"
 ]
@@ -212,4 +213,4 @@ raises-extend-require-match-for = ["*Exception", "*Error"]
 convention = "numpy"
 
 [tool.ruff.lint.isort]
-known-first-party = ["lightgbm"]
+known-first-party = ["lightgbm_blinder"]
